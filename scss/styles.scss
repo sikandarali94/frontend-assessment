@@ -1,3 +1,6 @@
+@import './variables';
+
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,5 +16,36 @@ html {
 
 body {
   font-family: sans-serif;
-  font-weight: 400;
+  font-size: 24px;
+  color: $primary-text-color;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), center url('../assets/img/desktop-banner.png');
+  background-size: cover;
+
+  .banner-text-container {
+    text-align: center;
+
+    .banner-secondary-text {
+      margin-top: 12px;
+    }
+  }
 }
