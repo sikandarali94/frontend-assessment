@@ -1,4 +1,4 @@
-import '../scss/styles.scss';
+import '../scss/styles.scss'; // Global styles
 import { renderCards } from './views/cards'
 
 // Brief text for each card.
