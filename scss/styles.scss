@@ -31,12 +31,28 @@ h2 {
   letter-spacing: 1px;
 }
 
+p {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+button {
+  text-transform: uppercase;
+  border: 3px $secondary-text-color solid;
+  background-color: transparent;
+  padding: 15px 23px 12px 23px;
+  letter-spacing: 3px;
+  font-size: 0.65em;
+  font-weight: bolder;
+  border-radius: 24px;
+}
+
 /* Banner Section */
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 650px;
+  height: 640px;
   width: 100%;
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), center url('../assets/img/desktop-banner.png');
   background-size: cover;
@@ -46,6 +62,45 @@ h2 {
 
     .banner-secondary-text {
       margin-top: 12px;
+    }
+  }
+}
+
+/* Brief Cards Section */
+.brief-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-gap: 48px;
+    color: $secondary-text-color;
+
+    .card {
+      box-shadow: 0 0 5px 0 $subtle-shade;
+      height: 580px;
+      border-radius: $rounded-border-radius;
+      padding: 20px;
+      text-align: center;
+
+      .card-image-container {
+        img {
+          width: 324px;
+          height: 243px;
+          border-radius: $rounded-border-radius;
+        }
+      }
+
+      .card-content-container {
+        margin-top: 16px;
+
+        .card-brief-text {
+          height: 216px;
+        }
+      }
     }
   }
 }

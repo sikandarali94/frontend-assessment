@@ -3,7 +3,7 @@ const getCardMarkup = briefText => {
     return `
         <div class="card">
             <div class="card-image-container">
-                <img src="" alt="" />
+                <img src="../assets/img/content-placeholder.png" alt="" />
             </div>
             <div class="card-content-container">
                 <p class="card-brief-text">
