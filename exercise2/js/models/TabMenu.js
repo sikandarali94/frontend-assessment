@@ -1,6 +1,6 @@
 export default class TabMenu {
     constructor(data) {
-        this.activeIndex = 0; // Active tab index.
+        this.activeIndex = '0'; // Active tab index.
         this.data = data; // JSON data.
         this.changeContent(this.activeIndex);
     }

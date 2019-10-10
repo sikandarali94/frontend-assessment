@@ -22,7 +22,7 @@ export const renderTabMenu = titles => {
             ${tabsMarkup}
         </div>
         <div class="ui bottom attached active tab segment menu-content-container">
-            <p class="menu-content"></p>
+            <div class="menu-content"></div>
         </div>
     `;
 
@@ -30,7 +30,7 @@ export const renderTabMenu = titles => {
 };
 
 // Show data associated with tab that is newly active.
-export const showSectionContent = (newIndex, content) => {
+export const showTabSectionContent = (newIndex, content) => {
     const menuContent = elements.menuContent();
     const oldActiveTab = elements.oldActiveTab();
     const newActiveTab = elements.newActiveTab(newIndex);
