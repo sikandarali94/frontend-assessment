@@ -2,15 +2,11 @@ const getCardMarkup = briefText => {
     // Return markup of card based on brief text.
     return `
         <div class="card">
-            <div class="card-image-container">
-                <img src="../assets/img/content-placeholder.png" alt="" />
-            </div>
-            <div class="card-content-container">
-                <p class="card-brief-text">
-                    ${briefText}
-                </p>
-                <button class="read-more">Read More</button>
-            </div>
+            <img src="../assets/img/content-placeholder.png" alt="content 400x300 placeholder" />
+            <p class="card-brief-text">
+                ${briefText}
+            </p>
+            <button class="read-more">Read More</button>
         </div>
     `;
 };

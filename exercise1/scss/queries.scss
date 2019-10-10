@@ -1,0 +1,51 @@
+@media (min-width: 1280px) {
+  /* Brief Cards Section > 1280px */
+  .brief-cards {
+    padding: 50px 0;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(3, 380px);
+    grid-auto-rows: $card-height;
+  }
+
+  img {
+    max-width: 324px;
+    max-height: 243px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  /* Brief Cards Section < 1280px */
+  .brief-cards {
+    padding: 50px 20px;
+  }
+
+  .cards-container {
+    grid-template-columns: minmax(95%, 480px);
+    grid-auto-rows: $card-height + 30px;
+  }
+
+  img {
+    max-width: 452px;
+    max-height: 339px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  /* Banner Section > 600px */
+  .banner {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), center url('../assets/img/desktop-banner.png');
+  }
+}
+
+@media (max-width: 600px) {
+  /* Banner Section < 600px */
+  .banner {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), center url('../assets/img/mobile-banner.png');
+  }
+}
