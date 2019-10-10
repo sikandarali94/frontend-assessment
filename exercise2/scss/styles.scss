@@ -1,8 +1,73 @@
-@import 'animations';
+$primary-text-color: #fff;
 
+/* Menu Section */
+.tab-nav.item:not([data-tab-active="true"]) {
+  color: $primary-text-color !important;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
+  .tab-menu {
+    width: 55%;
+  }
+
+  .accordion {
+    width: 80%;
+  }
+
+  h1 {
+    margin-bottom: 80px;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 28px;
+  }
+}
+
+/* Animations */
 .tab-menu,
 .accordion,
 .ui.accordion .active.content,
 .menu-content * {
   animation: slide-down .4s ease-in;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Queries */
+@media (min-width: 768px) {
+  .tab-menu {
+    display: block;
+  }
+
+  .accordion {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-menu {
+    display: none;
+  }
+
+  .accordion {
+    display: block;
+  }
 }
