@@ -48,7 +48,7 @@ const accordionMenu = () => {
 
 window.addEventListener('load', () => {
     tabMenu(); // Render tab menu on page load.
-    accordionMenu();
+    accordionMenu(); // Render accordion menu on page load.
 });
 
 const addTabNavClickListener = () => {
