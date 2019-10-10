@@ -1,7 +1,7 @@
 {
   "name": "frontend-assessment-exercise-1",
   "version": "1.0.0",
-  "description": "Introduction\r ---\r Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries. Bonus points if SASS/LESS is used and jQuery is not used.",
+  "description": "A responsive page based on the designs provided with exercise.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js"
