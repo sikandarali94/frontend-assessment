@@ -4,7 +4,8 @@
   "description": "A responsive page based on the designs provided with exercise.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.config.js",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
